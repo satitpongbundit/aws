@@ -1,0 +1,3 @@
+digraph "template" {
+S3Bucket [label="S3Bucket\n<AWS::S3::Bucket>"];
+}
