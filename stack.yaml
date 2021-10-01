@@ -1,4 +1,48 @@
-AWSTemplateFormatVersion: "2010-09-09"
+AWSTemplateFormatVersion: 2010-09-09
 Resources:
-  S3Bucket:
+  EC2VPC4GI48:
+    Type: AWS::EC2::VPC
+    Properties:
+      CidrBlock: 10.0.0.0/16
+
+  EC2S2ZXAV:
+    Type: AWS::EC2::Subnet
+    Properties:
+      CidrBlock: 10.0.0.0/24
+      MapPublicIpOnLaunch: true
+      VpcId: !Ref EC2VPC4GI48
+
+  EC2S1T9X9:
+    Type: AWS::EC2::Subnet
+    Properties:
+      CidrBlock: 10.0.1.0/24
+      VpcId: !Ref EC2VPC4GI48
+
+  EC2SP4MT:
+    Type: AWS::EC2::Subnet
+    Properties:
+      CidrBlock: 10.0.16.0/24
+      MapPublicIpOnLaunch: true
+      VpcId: !Ref EC2VPC4GI48
+
+  EC2S3H4XN:
+    Type: AWS::EC2::Subnet
+    Properties:
+      CidrBlock: 10.0.17.0/24
+      VpcId: !Ref EC2VPC4GI48
+
+  EC2S4SRCP:
+    Type: AWS::EC2::Subnet
+    Properties:
+      CidrBlock: 10.0.32.0/24
+      MapPublicIpOnLaunch: true
+      VpcId: !Ref EC2VPC4GI48
+
+  EC2S2BRGG:
+    Type: AWS::EC2::Subnet
+    Properties:
+      CidrBlock: 10.0.33.0/24
+      VpcId: !Ref EC2VPC4GI48
+
+  S3B2JWM7:
     Type: AWS::S3::Bucket

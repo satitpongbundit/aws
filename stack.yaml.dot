@@ -1,3 +1,16 @@
 digraph "template" {
-S3Bucket [label="S3Bucket\n<AWS::S3::Bucket>"];
+EC2VPC4GI48 [label="EC2VPC4GI48\n<AWS::EC2::VPC>"];
+EC2S2ZXAV [label="EC2S2ZXAV\n<AWS::EC2::Subnet>"];
+EC2S1T9X9 [label="EC2S1T9X9\n<AWS::EC2::Subnet>"];
+EC2SP4MT [label="EC2SP4MT\n<AWS::EC2::Subnet>"];
+EC2S3H4XN [label="EC2S3H4XN\n<AWS::EC2::Subnet>"];
+EC2S4SRCP [label="EC2S4SRCP\n<AWS::EC2::Subnet>"];
+EC2S2BRGG [label="EC2S2BRGG\n<AWS::EC2::Subnet>"];
+S3B2JWM7 [label="S3B2JWM7\n<AWS::S3::Bucket>"];
+EC2S2ZXAV -> EC2VPC4GI48  [key=0, label=Ref];
+EC2S1T9X9 -> EC2VPC4GI48  [key=0, label=Ref];
+EC2SP4MT -> EC2VPC4GI48  [key=0, label=Ref];
+EC2S3H4XN -> EC2VPC4GI48  [key=0, label=Ref];
+EC2S4SRCP -> EC2VPC4GI48  [key=0, label=Ref];
+EC2S2BRGG -> EC2VPC4GI48  [key=0, label=Ref];
 }
